@@ -63,7 +63,7 @@ The basic usage of this project is similar to the official ardupilot.
 
 For simulation, we list the steps of SITL tests below.
 ```bash
-# for SITL, first make sure REAL_OR_SITL in ardupilot/ArduCopter/config.h is 0.
+# for SITL, first make sure REAL_OR_SITL in ardupilot/ArduCopter/config.h is 0
 # under L1AC_ardupilot, go to autotest and run the simulation
 cd ./ardupilot/Tools/autotest/
 python3 sim_vehicle.py --console -A "--uartF=sim:vicon:" --map -v ArduCopter -f X
@@ -91,4 +91,11 @@ rc 3 1200
 mode 29
 ```
 You can turn L1 on by setting L1ENABLE to 1, and land the drone by setting LANDFLAG to 1. 
+
+For real donr flights, you can follow the offical way to compile and load the firmware to your board (Pixhawk4-mini, CubeOrange, CubeOrangePlus have been tested).
+```bash
+# under ardupilot, first make sure REAL_OR_SITL in ardupilot/ArduCopter/config.h is 1
+./waf configure --board CubeOrangePlus
+./waf copter
+```
 
