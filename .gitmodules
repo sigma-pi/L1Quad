@@ -1,0 +1,4 @@
+[submodule "ardupilot"]
+	path = ardupilot
+	url = https://github.com/ArduPilot/ardupilot
+	branch = Copter-4.4
