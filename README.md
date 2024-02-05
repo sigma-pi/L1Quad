@@ -52,8 +52,18 @@ GEOCTRL_KOZ    # kOmegaz for geometric controller
 CIRCSPEED      # circulating speed of the circular trajectory
 CIRCRADIUSX    # circle radius or figure8's x radius
 CIRCRADIUSY    # figure8's y radius (not used for circle radius)
-TRAJINDEX      # index of the trajectory to run, 1: variable yaw circular, 2: fixed yaw circular, 3: fixed yaw figure8, 4: fixed yaw figure8 with tilted altitude 
+TRAJINDEX      # index of the trajectory to run
 LANDFLAG       # landing control signal, 1 for landing and will disable takeoff, make sure 0 before flight
+```
+
+The list of trajectories:
+```bash
+# TRAJINDEX default value is 0, which means nothing
+# you need to specify the trajectory before flight
+param set TRAJINDEX 1  # variable yaw circular
+param set TRAJINDEX 2  # fixed yaw circular
+param set TRAJINDEX 3  # fixed yaw figure8
+param set TRAJINDEX 4  # fixed yaw figure8 with tilted altitude 
 ```
 
 There is an important setting in ardupilot/ArduCopter/config.h. **We added a flag REAL_OR_SITL to tell the code whether to use the settings for real drone tests or SITL simulations (only one place to change this value).** Set 0 for SITL, and 1 for real drone firmware. Check this value before compiling.
