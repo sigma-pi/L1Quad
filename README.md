@@ -9,8 +9,8 @@ Follow the steps below to clone this repository and install it on your computer.
 
 ```bash
 # clone this repository
-git clone https://github.com/sigma-pi/L1AC_ardupilot
-cd L1AC_ardupilot
+git clone https://github.com/sigma-pi/L1Quad
+cd L1Quad
 
 # make the bash script executable and then install
 chmod +x installation.sh
@@ -22,7 +22,7 @@ Below, we show the usage of L1Quad in Ardupilot's software-in-the-loop (SITL) si
 
 ```bash
 # for SITL, first make sure REAL_OR_SITL in ardupilot/ArduCopter/config.h is 0
-# under L1AC_ardupilot, go to autotest and run the simulation
+# under L1Quad, go to autotest and run the simulation
 cd ./ardupilot/Tools/autotest/
 python3 sim_vehicle.py --console -A "--uartF=sim:vicon:" --map -v ArduCopter -f X
 ```
@@ -116,7 +116,7 @@ param set TRAJINDEX 4  # fixed yaw figure8 with tilted altitude
 ```
 
 **Note**:
-In ardupilot/ArduCopter/config.h, **we added a flag REAL_OR_SITL to tell the compiler whether to use the settings for real drone tests or SITL simulations.** Set it to 0 (default) for SITL, and 1 for compiling firmware for a Poxhawk. Check this value before compiling.
+In ardupilot/ArduCopter/config.h, **we added a flag REAL_OR_SITL to tell the compiler whether to use the settings for real drone tests or SITL simulations.** Set it to 0 (default) for SITL, and 1 for compiling firmware for a Pixhawk. Check this value before compiling.
 
 ## License
 Please read the license attached to this repository.
