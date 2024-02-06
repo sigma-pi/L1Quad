@@ -1,6 +1,8 @@
 # L1Quad
 This project contains an implementation of the L1 Adaptive Control (L1AC) for quadrotors based on ardupilot. The details on the algorithm and experimental results can be found in the following paper:
-* [L1Quad: L1 Adaptive Augmentation of Geometric Control for Agile Quadrotors with Performance Guarantees](https://arxiv.org/abs/2302.07208). \| [\[demo\]](https://youtu.be/18-2OqTRJ50?si=T6rJvlOqwevCKzZk)
+* [L1Quad: L1 Adaptive Augmentation of Geometric Control for Agile Quadrotors with Performance Guarantees](https://arxiv.org/abs/2302.07208). 
+
+The demo can be accessed [here](https://youtu.be/18-2OqTRJ50?si=T6rJvlOqwevCKzZk)
 
 ## Installation
 Follow the steps below to clone this repository and install it on your computer. It has been tested on Ubuntu 20.04. You can alternatively set up the Ardupilot development environment on your own following [ArduPilot Setup in Linux](https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux).
