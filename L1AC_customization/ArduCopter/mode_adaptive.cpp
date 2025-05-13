@@ -623,6 +623,7 @@ VectorN<float, 4> ModeAdaptive::L1AdaptiveAugmentation(VectorN<float, 4> thrustM
 
     // use the rotation matrix in the current step
     Quaternion q;
+    ahrs.get_quat_body_to_ned(q);
     Matrix3f R;
     q.rotation_matrix(R); // transforming the quaternion q to rotation matrix R
 
