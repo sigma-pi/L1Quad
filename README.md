@@ -132,10 +132,14 @@ If this repository is helpful for your project, please cite the following papers
   year={2022},
   organization={IEEE}
 }
-@article{wu2023L1Quad,
-  title={$\mathcal{L}_1$Quad: $\mathcal{L}_1$ Adaptive Augmentation of Geometric Control for Agile Quadrotors with Performance Guarantees},
+@article{wu2025l1quad,
+  title={{L1Quad}: L1 Adaptive Augmentation of Geometric Control for Agile Quadrotors With Performance Guarantees},
   author={Wu, Zhuohuan and Cheng, Sheng and Zhao, Pan and Gahlawat, Aditya and Ackerman, Kasey A and Lakshmanan, Arun and Yang, Chengyu and Yu, Jiahao and Hovakimyan, Naira},
-  journal={arXiv preprint arXiv:2302.07208},
-  year={2023}
+  journal={IEEE Transactions on Control Systems Technology},
+  volume={33},
+  number={2},
+  pages={597--612},
+  year={2025},
+  publisher={IEEE}
 }
 ```
